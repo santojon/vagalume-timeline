@@ -20,7 +20,7 @@ Structure based in ishara's **angular2-without-npm** [1] (https://github.com/ish
     - 4.2. services: Typescript classes related to application data providers
     - 4.3. components: Typescript classes related to application view components
     - 4.4. templates: Html templates to use in application       
- - 5. docs: Folder destinated to publich github.io [2] (https://pages.github.com/) page
+ - 5. docs: Folder destinated to publish github.io [2] (https://pages.github.com/) page
 
 ## Running application
 
