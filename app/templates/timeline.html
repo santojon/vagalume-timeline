@@ -1,3 +1,26 @@
-<ul>
-    <li *ngFor="let post of posts">{{post.user.username}}</li>
-</ul>
+<div class="panel panel-default" *ngFor="let post of posts">
+    <div class="panel-body">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" title="{{post.user.username}}" src="{{post.user.picture}}" alt="{{post.user.username}}">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4>{{post.content}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer panel-default">
+        <div class="pull-left">
+            <a href="#" title="{{post.likes}} pessoas gostaram disso" class="btn btn-primary">
+                <span class="fa fa-thumbs-up"></span> {{post.likes}}
+            </a> 
+        </div>
+        <div class="pull-right">
+            <div class="date">
+                {{post.user.username}} em {{post.date.toLocaleDateString()}}
+            </div>
+        </div>
+    </div>
+</div>

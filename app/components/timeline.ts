@@ -51,6 +51,10 @@ export class Timeline {
 
     setUpTimeline(timelinePosts: TimelinePost[]) {
         this.posts = timelinePosts;
+
+        // hide loader and reveal content
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
     }
 
     /**
