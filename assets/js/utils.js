@@ -3,7 +3,7 @@
  * to String class, problably only useful to this application
  * @return: a new Date object with string given date and time
  */
-String.prototype.iso8601ToDate = function() {
+String.prototype.iso8601ToDate = function () {
     isoStr = this;
     parts = isoStr.split('');
 
@@ -26,4 +26,16 @@ String.prototype.iso8601ToDate = function() {
         result.setHours(result.getHours() - parseInt(gmtHour));
     }
     return result;
+}
+
+/**
+ * Action when user enjoys a post
+ */
+function enjoy(elem) {
+    str = elem.childNodes[2].data;
+    val = parseInt(str);
+
+    elem.title = 'you have already enjoyed it.';
+    elem.innerHTML = '<span class="fa fa-thumbs-up" aria-hidden="true"></span> ' + (val + 1);
+    elem.disabled = true;
 }

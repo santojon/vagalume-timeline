@@ -1,3 +1,8 @@
+ /* GENERAL */
+h4, p, label {
+  color: #6D6E71 !important;
+}
+
 /* NAVBAR */
 /* Fix navbar height */
 .navbar.navbar-default {
@@ -16,9 +21,14 @@
     top: 20px;
     text-align: center;
     padding-left: 65px;
+    color: #6D6E71;
 }
 
-/* PANEL FOOTER */
+/* PANEL AND MODAL */
+.media-body a {
+  color: #f26522 !important;
+}
+
 .panel-footer {
     height: 55px !important;
 }
@@ -27,14 +37,40 @@
     padding-top: 8px;
 }
 
-.panel-footer .btn-primary {
+.panel-footer .btn-primary,
+.modal-footer .btn-primary {
   background-color: #f26522;
   border-color: #f26522;
 }
 
-.panel-footer .btn-primary:active {
+.panel-footer .btn-primary:hover,
+.modal-footer .btn-primary:hover {
+  background-color: #f26522;
+  border-color: #f26522;
+}
+
+.panel-footer .btn-primary:disabled,
+.modal-footer .btn-primary:disabled {
   background-color: #6D6E71;
   border-color: #6D6E71;
+}
+
+.panel-footer .btn-primary:active,
+.modal-footer .btn-primary:active,
+.modal .label.label-primary {
+  background-color: #6D6E71;
+  border-color: #6D6E71;
+}
+
+.panel-footer .btn-primary:disabled:hover,
+.modal-footer .btn-primary:disabled:hover {
+  background-color: #6D6E71;
+  border-color: #6D6E71;
+}
+
+/* Post user image */
+a img.media-object:hover {
+	box-shadow: 3px 3px 5px #6D6E71;
 }
 
 

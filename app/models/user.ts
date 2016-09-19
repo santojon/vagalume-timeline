@@ -5,6 +5,7 @@ export class User {
     // properties
     id: Number;
     username: String;
+    prettyName: String;
     city: String;
     state: String;
     picture: URL;
@@ -18,6 +19,7 @@ export class User {
                     picture: String, bio: String, friends: Number) {
         this.id = id;
         this.username = username;
+        this.prettyName = username[0].toUpperCase() + username.substring(1);
         this.picture = new URL(picture);
         this.bio = bio;
         this.friends = friends;
