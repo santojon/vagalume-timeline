@@ -1,0 +1,133 @@
+ /* GENERAL */
+h4, p, label {
+  color: #6D6E71 !important;
+}
+
+/* NAVBAR */
+/* Fix navbar height */
+.navbar.navbar-default {
+    height: 60px !important;
+}
+
+/* Set logo possition */
+.logo {
+    position: absolute;
+    top: 12px;
+    text-align: center;
+}
+
+.logo-text {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    padding-left: 65px;
+    color: #6D6E71;
+}
+
+/* PANEL AND MODAL */
+.media-body a {
+  color: #f26522 !important;
+}
+
+.panel-footer {
+    height: 55px !important;
+}
+
+.panel-footer .date {
+    padding-top: 8px;
+}
+
+.panel-footer .btn-primary,
+.modal-footer .btn-primary {
+  background-color: #f26522;
+  border-color: #f26522;
+}
+
+.panel-footer .btn-primary:hover,
+.modal-footer .btn-primary:hover {
+  background-color: #f26522;
+  border-color: #f26522;
+}
+
+.panel-footer .btn-primary:disabled,
+.modal-footer .btn-primary:disabled {
+  background-color: #6D6E71;
+  border-color: #6D6E71;
+}
+
+.panel-footer .btn-primary:active,
+.modal-footer .btn-primary:active,
+.modal .label.label-primary {
+  background-color: #6D6E71;
+  border-color: #6D6E71;
+}
+
+.panel-footer .btn-primary:disabled:hover,
+.modal-footer .btn-primary:disabled:hover {
+  background-color: #6D6E71;
+  border-color: #6D6E71;
+}
+
+/* Post user image */
+a img.media-object:hover {
+	box-shadow: 3px 3px 5px #6D6E71;
+}
+
+
+/* CONTENT */
+/* Make container respect navbar height */
+.container {
+    padding-top: 80px !important; 
+}
+
+#content {
+  display: none;
+}
+
+/* Add animation to page content */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+
+/* LOADER */
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -75px 0 0 -75px;
+  border: 15px solid #6D6E71;
+  border-radius: 50%;
+  border-top: 15px solid #F26522;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+/* Add animation to page loader */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
