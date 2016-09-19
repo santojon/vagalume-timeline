@@ -19,16 +19,18 @@ Structure based in ishara's **angular2-without-npm** [1] (https://github.com/ish
     - 4.1. models: Typescript classes related to application data models
     - 4.2. services: Typescript classes related to application data providers
     - 4.3. components: Typescript classes related to application view components
-    - 4.4. templates: Html templates to use in application
+    - 4.4. templates: Html templates to use in application       
+ - 5. docs: Folder destinated to publich github.io [2] (https://pages.github.com/) page
 
 ## Running application
 
 To run, you just need a server landing in this project's folder (same level as index.html)    
-Tested with **Apache hpptd (Apache2)** [2] (https://httpd.apache.org/), **Cloud9** [3] (https://c9.io/), and **Webserver for Chrome** [4] (https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb)     
+Tested with **Apache hpptd (Apache2)** [3] (https://httpd.apache.org/), **Cloud9** [4] (https://c9.io/), and **Webserver for Chrome** [5] (https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb)     
 
 ## References
 
-[1] https://github.com/ishara/angular2-without-npm     
-[2] https://httpd.apache.org/      
-[3] https://c9.io/      
-[4] https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb      
+[1] https://github.com/ishara/angular2-without-npm      
+[2] https://pages.github.com/      
+[3] https://httpd.apache.org/      
+[4] https://c9.io/      
+[5] https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb      

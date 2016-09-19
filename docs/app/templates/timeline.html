@@ -1,0 +1,71 @@
+<dv *ngFor="let post of posts">
+    <!-- Post -->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#{{post.user.id}}" data-toggle="modal" data-target="#{{post.user.id}}">
+                        <img class="media-object" title="@{{post.user.username}}" src="{{post.user.picture}}" alt="@{{post.user.username}}">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4>
+                        <label>
+                            <a title="@{{post.user.username}}" href="#{{post.user.id}}" data-toggle="modal" data-target="#{{post.user.id}}">
+                                {{post.user.prettyName}}
+                            </a>
+                             has posted:
+                        </label>
+                    </h4>
+                    <p>{{post.content}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer panel-default">
+            <div class="pull-left">
+                <button title="enjoy it!" class="btn btn-primary" onclick="enjoy(this);">
+                    <span class="fa fa-thumbs-up"></span> {{post.likes}}
+                </button>
+                  <label>people enjoy this</label>
+            </div>
+            <div class="pull-right">
+                <div class="date">
+                    <label>in {{post.date.toLocaleDateString()}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile -->
+    <div class="modal fade" id="{{post.user.id}}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        {{post.user.prettyName}} (@{{post.user.username}})
+                        <div class="pull-right">
+                            <span class="label label-primary">
+                               have {{post.user.friends}} {{post.user.friends < 2 ? 'friend' : 'friends'}}
+                            </span>
+                        </div>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object" title="@{{post.user.username}}" src="{{post.user.picture}}" alt="@{{post.user.username}}">
+                        </div>
+                        <div class="media-body">
+                            <label>Short Bio:</label> <p>{{post.user.bio}}</p>
+                            <label>City:</label> <p>{{post.user.city}}</p>
+                            <label>State:</label> <p>{{post.user.state}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</dv>
