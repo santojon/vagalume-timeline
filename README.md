@@ -23,7 +23,7 @@ Structure based in ishara's **angular2-without-npm** [1] (https://github.com/ish
 
 ## Running application
 
-To run, you just need a server landing in this project's folder (same level as index.html)    
+To run, is just needed a server landing in the project folder (same level as index.html) and open the 'server url/index.html' file    
 Tested with **Apache hpptd (Apache2)** [2] (https://httpd.apache.org/), **Cloud9** [3] (https://c9.io/), and **Webserver for Chrome** [4] (https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb)     
 
 ## References
