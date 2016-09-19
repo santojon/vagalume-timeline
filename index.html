@@ -3,16 +3,11 @@
 	<head>
 		<title>Vagalume timeline</title>
 		<meta charset="UTF-8">
-
 		<!-- System.js -->
     	<script src="https://unpkg.com/systemjs@0.19.6/dist/system.src.js"></script>
 
 		<!-- Angular2 & Typescript -->
     	<script src="https://code.angularjs.org/tools/typescript.js"></script>
-
-		<!-- Typescript compile -->
-		<script type="text/javascript" src="assets/js/vendor/typescript.min.js"></script>
-		<script type="text/javascript" src="assets/js/vendor/typescript.compile.min.js"></script>
 		
 		<!-- Font awesome -->
 		<script type="text/javascript" src="https://use.fontawesome.com/670555b458.js"></script>
@@ -33,10 +28,10 @@
 		<script src="system.config.js"></script>
 	</head>
 	<body>
-		<hello>Loading...</hello>
+		<!-- Timeline selector to be used by Angular component -->
+		<timeline>Loading...</timeline>
 
-		<script>
-			System.import('app');
-		</script>
+		<!-- import the package to run Angular app -->
+		<script>System.import('app');</script>
 	</body>
 </html>

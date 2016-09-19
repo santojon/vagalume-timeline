@@ -1,4 +1,19 @@
+/**
+ * Angular needed imports
+ */
 import { bootstrap } from '@angular/platform-browser-dynamic';
-import { Hello } from './app.component.ts';
+import { HTTP_PROVIDERS } from '@angular/http';
 
-bootstrap(Hello);
+/**
+ * Application specific imports
+ */
+import { TimelineService } from './services/timelineService';
+import { Timeline } from './components/timeline';
+
+/**
+ * Initialize app with default component and data providers
+ */
+bootstrap(
+    Timeline,
+    [HTTP_PROVIDERS, TimelineService]
+);
