@@ -25,6 +25,10 @@ Structure based in ishara's **angular2-without-npm** [1] (https://github.com/ish
 
 To run, is just needed a server landing in the project folder (same level as index.html) and open the 'server url/index.html' file    
 Tested with **Apache hpptd (Apache2)** [2] (https://httpd.apache.org/), **Cloud9** [3] (https://c9.io/), and **Webserver for Chrome** [4] (https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb)     
+To configure it, open **system.config.js** file and set your custom *timelineUrl*, *localTimelineUrl* and *alternateVersion*     
+> *timelineUrl*: external path to timeline.json      
+> *localTimelineUrl*: internal (local) path to timeline.json      
+> *alternateVersion*: set to **true** to get an alternative view of timeline (zig-zag) or **false (default)** to get a list view      
 
 ## References
 
