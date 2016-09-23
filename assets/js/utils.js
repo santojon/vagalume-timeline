@@ -29,6 +29,21 @@ String.prototype.iso8601ToDate = function () {
 }
 
 /**
+ * Order array of objects bry property name
+ */
+Array.prototype.orderBy = function (field, order, rfunc) {
+    var key = rfunc ?
+        function(x) { return rfunc(x[field]); } :
+        function(x) { return x[field]; };
+
+    order = (order === 'desc') ? -1 : 1;
+
+    return this.sort(function (a, b) {
+        return a = key(a), b = key(b), order * ((a > b) - (b > a));
+    });
+};
+
+/**
  * Action when user enjoys a post
  */
 function enjoy(elem) {

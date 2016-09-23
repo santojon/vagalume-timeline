@@ -24,8 +24,8 @@ export class TimelineService {
   constructor(private http: Http) { }
 
   /**
-     * Get timeline from 'timelineUrl', configured in system.config.js
-     */
+   * Get timeline from 'timelineUrl', configured in system.config.js
+   */
   getTimeline(): Observable<TimelinePost[]> {
     // add headers
     let headers = new Headers({

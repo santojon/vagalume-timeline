@@ -32,7 +32,7 @@ export class Timeline {
      */
     getTimeline() {
         this.timelineService.getTimeline().subscribe(
-            timelinePosts => this.posts = timelinePosts,
+            timelinePosts => this.setUpTimeline(timelinePosts),
             error =>  this.errorMessage = <any>error
         );
     }
@@ -50,7 +50,7 @@ export class Timeline {
     }
 
     setUpTimeline(timelinePosts: TimelinePost[]) {
-        this.posts = timelinePosts;
+        this.posts = timelinePosts.orderBy('date', 'desc');
 
         // hide loader and reveal content
         document.getElementById('loader').style.display = 'none';
