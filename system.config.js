@@ -9,9 +9,10 @@
  *      - application packages
  */
 
-// Timeline related Urls (server and local json files)
+// Timeline related Urls (server and local json files, and template version)
 var timelineUrl = 'http://vagalumewifi.com.br/timeline.json';
 var localTimelineUrl = '../timeline.json';
+var alternateVersion = false;
 
 // Angular version
 var angularVersion = '2.0.0-rc.5';

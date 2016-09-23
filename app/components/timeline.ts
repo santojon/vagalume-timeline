@@ -14,7 +14,7 @@ import { TimelineService } from '../services/timelineService';
  */
 @Component({
     selector: 'timeline',
-    templateUrl: '../app/templates/timeline.html',
+    templateUrl: alternateVersion ? '../app/templates/timeline-alt.html' : '../app/templates/timeline.html',
     providers: [ TimelineService ]
 })
 export class Timeline {

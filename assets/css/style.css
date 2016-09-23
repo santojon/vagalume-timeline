@@ -25,7 +25,7 @@ h4, p, label {
 }
 
 /* PANEL AND MODAL */
-.media-body a {
+a {
   color: #f26522 !important;
 }
 
@@ -37,33 +37,28 @@ h4, p, label {
     padding-top: 8px;
 }
 
-.panel-footer .btn-primary,
-.modal-footer .btn-primary {
+.btn-primary {
   background-color: #f26522;
   border-color: #f26522;
 }
 
-.panel-footer .btn-primary:hover,
-.modal-footer .btn-primary:hover {
+.btn-primary:hover {
   background-color: #f26522;
   border-color: #f26522;
 }
 
-.panel-footer .btn-primary:disabled,
-.modal-footer .btn-primary:disabled {
+.btn-primary:disabled {
   background-color: #6D6E71;
   border-color: #6D6E71;
 }
 
-.panel-footer .btn-primary:active,
-.modal-footer .btn-primary:active,
+.btn-primary:active,
 .modal .label.label-primary {
   background-color: #6D6E71;
   border-color: #6D6E71;
 }
 
-.panel-footer .btn-primary:disabled:hover,
-.modal-footer .btn-primary:disabled:hover {
+.btn-primary:disabled:hover {
   background-color: #6D6E71;
   border-color: #6D6E71;
 }
